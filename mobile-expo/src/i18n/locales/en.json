@@ -1,0 +1,123 @@
+{
+    "common": {
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "close": "Close",
+        "logout": "Logout",
+        "back": "Back",
+        "next": "Next",
+        "refresh": "Refresh",
+        "search": "Search"
+    },
+    "auth": {
+        "login": "Login",
+        "loginWithBiometrics": "Login with Biometrics",
+        "usernameOrEmail": "Username or Email",
+        "password": "Password",
+        "forgotPassword": "Forgot Password",
+        "loginSuccess": "Login successful!",
+        "loginError": "Login failed",
+        "logoutConfirm": "Are you sure you want to logout?",
+        "biometricPrompt": "Authenticate to login",
+        "biometricError": "Biometric authentication failed"
+    },
+    "home": {
+        "greeting": "Hello,",
+        "quickAccess": "Quick Access",
+        "enrolledCourses": "Enrolled Courses",
+        "completedQuizzes": "Completed Quizzes",
+        "myCourses": "My Courses",
+        "myCoursesDesc": "Access all your enrolled courses",
+        "quizHistory": "Quiz History",
+        "quizHistoryDesc": "View all your quiz attempts",
+        "profile": "My Profile",
+        "profileDesc": "View and update your account information"
+    },
+    "courses": {
+        "title": "My Courses",
+        "noCourses": "You are not enrolled in any courses yet",
+        "courseDetails": "Course Details",
+        "instructor": "Instructor",
+        "progress": "Progress",
+        "modules": "Modules",
+        "quizzes": "Quizzes",
+        "assignments": "Assignments",
+        "viewDetails": "View Details",
+        "startCourse": "Start Course",
+        "continueCourse": "Continue",
+        "description": "Description",
+        "content": "Content",
+        "video": "Video",
+        "pdf": "PDF"
+    },
+    "quiz": {
+        "title": "Quiz History",
+        "noQuizzes": "You have no quiz history yet",
+        "attempt": "Attempt",
+        "score": "Score",
+        "status": "Status",
+        "passed": "Passed",
+        "failed": "Failed",
+        "date": "Date",
+        "viewResults": "View Results",
+        "startQuiz": "Start Quiz",
+        "mobileRestriction": "Quizzes cannot be taken on mobile devices",
+        "useDesktop": "Please use the web or desktop application"
+    },
+    "profile": {
+        "title": "Profile",
+        "settings": "Settings",
+        "appearance": "Appearance",
+        "darkMode": "Dark Mode",
+        "lightMode": "Light Mode",
+        "themeToggle": "Change theme preference",
+        "accountInfo": "Account Information",
+        "username": "Username",
+        "email": "Email",
+        "role": "Role",
+        "language": "Language",
+        "notifications": "Notifications",
+        "enableNotifications": "Enable Notifications",
+        "biometric": "Biometric Login",
+        "enableBiometric": "Enable biometric login",
+        "appVersion": "App Version"
+    },
+    "roles": {
+        "STUDENT": "Student",
+        "INSTRUCTOR": "Instructor",
+        "ADMIN": "Administrator",
+        "SUPER_ADMIN": "Super Administrator"
+    },
+    "instructor": {
+        "dashboard": "Instructor Dashboard",
+        "myCourses": "My Courses",
+        "createCourse": "Create New Course",
+        "editCourse": "Edit Course",
+        "students": "Students",
+        "courseTitle": "Course Title",
+        "courseDescription": "Course Description"
+    },
+    "admin": {
+        "dashboard": "Admin Dashboard",
+        "users": "Users",
+        "courses": "Courses",
+        "statistics": "Statistics",
+        "totalUsers": "Total Users",
+        "totalCourses": "Total Courses"
+    },
+    "offline": {
+        "title": "Offline Mode",
+        "message": "No internet connection. Showing cached content.",
+        "syncWhenOnline": "Will sync when connection is restored"
+    },
+    "theme": {
+        "dark": "🌙 Dark Mode",
+        "light": "☀️ Light Mode"
+    }
+}

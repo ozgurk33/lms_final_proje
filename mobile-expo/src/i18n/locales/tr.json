@@ -1,0 +1,123 @@
+{
+    "common": {
+        "loading": "Yükleniyor...",
+        "error": "Hata",
+        "success": "Başarılı",
+        "cancel": "İptal",
+        "confirm": "Onayla",
+        "save": "Kaydet",
+        "delete": "Sil",
+        "edit": "Düzenle",
+        "close": "Kapat",
+        "logout": "Çıkış Yap",
+        "back": "Geri",
+        "next": "İleri",
+        "refresh": "Yenile",
+        "search": "Ara"
+    },
+    "auth": {
+        "login": "Giriş Yap",
+        "loginWithBiometrics": "Biyometrik ile Giriş",
+        "usernameOrEmail": "Kullanıcı Adı veya E-posta",
+        "password": "Şifre",
+        "forgotPassword": "Şifremi Unuttum",
+        "loginSuccess": "Giriş başarılı!",
+        "loginError": "Giriş başarısız",
+        "logoutConfirm": "Çıkış yapmak istediğinize emin misiniz?",
+        "biometricPrompt": "Giriş yapmak için kimliğinizi doğrulayın",
+        "biometricError": "Biyometrik doğrulama başarısız"
+    },
+    "home": {
+        "greeting": "Merhaba,",
+        "quickAccess": "Hızlı Erişim",
+        "enrolledCourses": "Kayıtlı Kurs",
+        "completedQuizzes": "Tamamlanan Sınav",
+        "myCourses": "Kurslarım",
+        "myCoursesDesc": "Kayıtlı olduğunuz tüm kurslara erişin",
+        "quizHistory": "Sınav Geçmişim",
+        "quizHistoryDesc": "Tüm sınav denemelerinizi görüntüleyin",
+        "profile": "Profilim",
+        "profileDesc": "Hesap bilgilerinizi görüntüleyin ve güncelleyin"
+    },
+    "courses": {
+        "title": "Kurslarım",
+        "noCourses": "Henüz bir kursa kayıtlı değilsiniz",
+        "courseDetails": "Kurs Detayı",
+        "instructor": "Eğitmen",
+        "progress": "İlerleme",
+        "modules": "Modüller",
+        "quizzes": "Sınavlar",
+        "assignments": "Ödevler",
+        "viewDetails": "Detayları Gör",
+        "startCourse": "Kursa Başla",
+        "continueCourse": "Devam Et",
+        "description": "Açıklama",
+        "content": "İçerik",
+        "video": "Video",
+        "pdf": "PDF"
+    },
+    "quiz": {
+        "title": "Sınav Geçmişi",
+        "noQuizzes": "Henüz sınav geçmişiniz yok",
+        "attempt": "Deneme",
+        "score": "Puan",
+        "status": "Durum",
+        "passed": "Geçti",
+        "failed": "Kaldı",
+        "date": "Tarih",
+        "viewResults": "Sonuçları Gör",
+        "startQuiz": "Sınavı Başlat",
+        "mobileRestriction": "Sınavlar mobil cihazlardan alınamaz",
+        "useDesktop": "Lütfen web veya masaüstü uygulamasını kullanın"
+    },
+    "profile": {
+        "title": "Profil",
+        "settings": "Ayarlar",
+        "appearance": "Görünüm",
+        "darkMode": "Karanlık Mod",
+        "lightMode": "Aydınlık Mod",
+        "themeToggle": "Tema tercihini değiştir",
+        "accountInfo": "Hesap Bilgileri",
+        "username": "Kullanıcı Adı",
+        "email": "E-posta",
+        "role": "Rol",
+        "language": "Dil",
+        "notifications": "Bildirimler",
+        "enableNotifications": "Bildirimleri Etkinleştir",
+        "biometric": "Biyometrik Giriş",
+        "enableBiometric": "Biyometrik girişi etkinleştir",
+        "appVersion": "Uygulama Sürümü"
+    },
+    "roles": {
+        "STUDENT": "Öğrenci",
+        "INSTRUCTOR": "Eğitmen",
+        "ADMIN": "Yönetici",
+        "SUPER_ADMIN": "Süper Yönetici"
+    },
+    "instructor": {
+        "dashboard": "Eğitmen Paneli",
+        "myCourses": "Kurslarım",
+        "createCourse": "Yeni Kurs Oluştur",
+        "editCourse": "Kursu Düzenle",
+        "students": "Öğrenciler",
+        "courseTitle": "Kurs Başlığı",
+        "courseDescription": "Kurs Açıklaması"
+    },
+    "admin": {
+        "dashboard": "Yönetici Paneli",
+        "users": "Kullanıcılar",
+        "courses": "Kurslar",
+        "statistics": "İstatistikler",
+        "totalUsers": "Toplam Kullanıcı",
+        "totalCourses": "Toplam Kurs"
+    },
+    "offline": {
+        "title": "Çevrimdışı Mod",
+        "message": "İnternet bağlantınız yok. Kayıtlı içerikler gösteriliyor.",
+        "syncWhenOnline": "İnternet bağlantısı kurulduğunda senkronize edilecek"
+    },
+    "theme": {
+        "dark": "🌙 Karanlık Mod",
+        "light": "☀️ Aydınlık Mod"
+    }
+}

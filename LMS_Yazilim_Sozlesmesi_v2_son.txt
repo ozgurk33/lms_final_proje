@@ -1,0 +1,1334 @@
+YAZILIM GELİŞTİRME SÖZLEŞMESİ
+ÖĞRENİM YÖNETİM SİSTEMİ (LMS)
+Kapsamlı Eğitim Platformu Projesi
+
+Sözleşme No:
+
+LMS-2025-1228-001
+
+Tarih:
+
+28.12.2025
+
+Proje:
+
+Kapsamlı LMS Platformu
+
+Hedef Platformlar:
+• Mobil Uygulama (React Native) - iOS/Android
+• Web Sitesi (React.js) - Responsive
+• Masaüstü (Electron) - Windows/macOS
+• Optik Okuyucu - Mobil Entegre
+• Safe Exam Browser Entegrasyonu
+
+İÇİNDEKİLER
+• 1. Taraflar ve Tanımlar
+• 2. Sözleşmenin Konusu ve Kapsamı
+• 3. Teknik Altyapı Gereksinimleri
+• 4. Mobil Uygulama Özellikleri
+• 5. Web Sitesi Özellikleri
+• 6. Masaüstü Uygulama Özellikleri
+• 7. Optik Okuyucu Modülü
+• 8. Kullanıcı Yönetimi ve Roller
+• 9. Ders ve İçerik Yönetimi
+• 10. Değerlendirme ve Sınav Sistemi
+• 11. Safe Exam Browser Entegrasyonu
+• 12. Raporlama ve Analitik
+• 13. Entegrasyonlar
+• 14. Güvenlik Gereksinimleri
+• 15. Performans Kriterleri
+• 16. Teslimat Takvimi
+• 17. Ödeme Koşulları
+• 18. Garanti ve Destek
+• 19. Fikri Mülkiyet Hakları
+• 20. Gizlilik
+• 21. Fesih Koşulları
+• 22. Uyuşmazlık Çözümü
+• EK-1: Özellik Puanlama Tablosu (Toplam 100 Puan)
+
+MADDE 1 - TARAFLAR VE TANIMLAR
+1.1 TARAFLAR
+İŞVEREN
+
+YÜKLENİCİ
+
+Unvan:
+
+[...................]
+
+[...................]
+
+Adres:
+
+[...................]
+
+[...................]
+
+Vergi No:
+
+[...................]
+
+[...................]
+
+Telefon:
+
+[...................]
+
+[...................]
+
+E-posta:
+
+[...................]
+
+[...................]
+
+1.2 TANIMLAR
+LMS: Öğrenim Yönetim Sistemi
+React Native: Çapraz platform mobil framework
+React.js: Web arayüz kütüphanesi
+Electron: Masaüstü uygulama framework'ü
+SEB: Safe Exam Browser - Güvenli sınav tarayıcısı
+SCORM/xAPI: E-öğrenme standartları
+OMR: Optik işaret okuyucu
+
+MADDE 2 - SÖZLEŞMENİN KONUSU VE KAPSAMI
+Bu sözleşme, Moodle düzeyinde kapsamlı özelliklere sahip, çoklu platform destekli (mobil, web, masaüstü) bir
+LMS'nin tasarımı, geliştirilmesi, test edilmesi ve kurulumu hizmetlerini kapsar.
+
+2.1 KAPSAM
+• React Native iOS/Android mobil uygulama
+• Optik form okuyucu modülü
+• React.js responsive web uygulaması
+• Electron Windows/macOS masaüstü uygulaması
+• Safe Exam Browser entegrasyonu
+• RESTful API backend
+• Admin paneli ve dokümantasyon
+
+MADDE 3 - TEKNİK ALTYAPI
+3.1 SUNUCU GEREKSİNİMLERİ
+Bileşen
+
+Minimum
+
+Önerilen
+
+CPU
+
+4 vCPU
+
+8+ vCPU
+
+RAM
+
+8 GB
+
+16+ GB
+
+Depolama
+
+100 GB SSD
+
+500+ GB NVMe
+
+İşletim Sistemi
+
+Ubuntu 22.04
+
+Ubuntu 24.04
+
+Katman
+
+Teknoloji
+
+Versiyon
+
+Mobil
+
+React Native
+
+0.73+
+
+Web
+
+React.js + Next.js
+
+18.x / 14.x
+
+Masaüstü
+
+Electron
+
+28.x
+
+Backend
+
+Node.js / Express
+
+20.x LTS
+
+Veritabanı
+
+PostgreSQL
+
+16.x
+
+Cache
+
+Redis
+
+7.x
+
+Depolama
+
+MinIO / S3
+
+Latest
+
+Container
+
+Docker
+
+24.x
+
+3.2 TEKNOLOJİ STACK
+
+MADDE 4 - MOBİL UYGULAMA (React Native)
+4.1 GENEL ÖZELLİKLER
+Özellik
+
+Açıklama
+
+Puan
+
+iOS Desteği
+
+iOS 14.0 ve üzeri
+
+1.5
+
+Android Desteği
+
+Android 8.0 (API 26)+
+
+1.5
+
+Offline Mod
+
+İçerik çevrimdışı erişimi
+
+1.2
+
+Push Bildirim
+
+FCM/APNS entegrasyonu
+
+1.0
+
+Biyometrik Giriş
+
+Face ID / Parmak izi
+
+0.8
+
+Çoklu Dil
+
+i18n, minimum 3 dil
+
+1.0
+
+Karanlık Mod
+
+Sistem temasına uyum
+
+0.5
+
+Erişilebilirlik
+
+WCAG 2.1 AA uyumu
+
+1.0
+
+4.2 OPTİK OKUYUCU MODÜLÜ
+Özellik
+
+Açıklama
+
+Puan
+
+Kamera Entegrasyonu
+
+Gerçek zamanlı görüntü
+
+1.5
+
+Form Tanıma
+
+Otomatik form algılama
+
+1.5
+
+Köşe Tespiti
+
+Otomatik köşe algılama
+
+1.2
+
+Perspektif Düzeltme
+
+Eğik çekim düzeltme
+
+1.0
+
+Bubble Okuma
+
+Doldurulmuş kabarcık tespiti
+
+1.5
+
+Çoklu Sayfa
+
+Batch tarama desteği
+
+1.0
+
+Sonuç Doğrulama
+
+Kullanıcı onay arayüzü
+
+1.0
+
+JSON Export
+
+Sonuç veri çıktısı
+
+1.0
+
+Hata Toleransı
+
+Kısmi form okuma
+
+0.8
+
+Özellik
+
+Açıklama
+
+Puan
+
+Video Oynatıcı
+
+HLS/DASH, altyazı, hız kontrolü
+
+1.2
+
+PDF Görüntüleyici
+
+Zoom, arama, yer imi
+
+1.0
+
+İlerleme Takibi
+
+Pozisyon kaydetme
+
+1.0
+
+Not Alma
+
+İçerik üzerine notlar
+
+0.8
+
+İndirme
+
+Yerel depolama
+
+1.0
+
+Çoktan Seçmeli
+
+Tek/çok seçenek
+
+1.0
+
+Zamanlayıcı
+
+Geri sayım, oto-gönderim
+
+1.0
+
+Anti-Cheat
+
+Uygulama değişiklik algılama
+
+1.0
+
+4.3 DERS VE SINAV (MOBİL)
+
+MADDE 5 - WEB SİTESİ (React.js)
+5.1 GENEL ÖZELLİKLER
+Özellik
+
+Açıklama
+
+Puan
+
+Responsive
+
+Tüm ekran boyutlarına uyum
+
+1.5
+
+SPA Mimarisi
+
+React Router ile tek sayfa
+
+1.2
+
+PWA Desteği
+
+Service Worker ile offline
+
+1.0
+
+Tarayıcı Uyumu
+
+Chrome, Firefox, Safari, Edge
+
+1.0
+
+Performans
+
+Lighthouse 90+ skor
+
+1.0
+
+Çoklu Dil
+
+react-i18next ile i18n
+
+0.8
+
+Tema Desteği
+
+Açık/Koyu mod
+
+0.5
+
+Özellik
+
+Açıklama
+
+Puan
+
+Ders Oluşturma
+
+WYSIWYG editör
+
+1.5
+
+Modül Yapısı
+
+Hiyerarşik organizasyon
+
+1.2
+
+Ön Koşullar
+
+Ders bağımlılıkları
+
+1.0
+
+Erişim Kontrolü
+
+Tarih/grup/şifre kısıtlama
+
+1.2
+
+İçerik Türleri
+
+Video, PDF, SCORM, H5P
+
+1.5
+
+Sürükle-Bırak
+
+İçerik düzenleme
+
+0.8
+
+Ders Kopyalama
+
+Dönemler arası çoğaltma
+
+0.8
+
+Şablonlar
+
+Hazır ders yapıları
+
+0.5
+
+5.2 DERS YÖNETİMİ
+
+5.3 DEĞERLENDİRME ARAÇLARI
+Özellik
+
+Açıklama
+
+Puan
+
+Soru Bankası
+
+Kategori/etiket yönetimi
+
+1.5
+
+15+ Soru Türü
+
+Çoktan seçmeli, eşleştirme vb.
+
+1.5
+
+Rastgele Soru
+
+Havuzdan seçim
+
+1.0
+
+Otomatik Puanlama
+
+Objektif sorular için
+
+1.2
+
+Rubrik Sistemi
+
+Açık uçlu değerlendirme
+
+1.0
+
+Not Defteri
+
+Kapsamlı not yönetimi
+
+1.2
+
+Plagiarism
+
+Benzerlik kontrolü
+
+0.6
+
+MADDE 6 - MASAÜSTÜ UYGULAMA (Electron)
+6.1 PLATFORM DESTEĞİ
+Özellik
+
+Açıklama
+
+Puan
+
+Windows
+
+Windows 10/11 (x64, ARM64)
+
+1.5
+
+macOS
+
+macOS 11+ (Intel, Apple Silicon)
+
+1.5
+
+Otomatik Güncelleme
+
+Electron-updater
+
+1.0
+
+Code Signing
+
+MS ve Apple sertifikası
+
+1.0
+
+Sistem Tepsisi
+
+Arka plan çalışma
+
+0.8
+
+Dosya Sistemi
+
+Yerel okuma/yazma
+
+1.0
+
+İndirme Yöneticisi
+
+Büyük dosya indirme
+
+0.8
+
+Offline Senkron
+
+Çevrimdışı erişim
+
+1.0
+
+Webcam/Mikrofon
+
+Canlı ders donanımı
+
+0.9
+
+MADDE 11 - SAFE EXAM BROWSER
+11.1 SEB TEMEL ÖZELLİKLER
+Özellik
+
+Açıklama
+
+Puan
+
+SEB Algılama
+
+Tarayıcı doğrulaması
+
+1.5
+
+Kiosk Modu
+
+Tam ekran kilitleme
+
+1.5
+
+Browser Key
+
+Benzersiz sınav anahtarı
+
+1.2
+
+Config Dosyası
+
+SEB yapılandırma oluşturma
+
+1.0
+
+URL Filtreleme
+
+İzin/yasak site listesi
+
+1.0
+
+Uygulama Engeli
+
+Diğer uygulamaları engelleme
+
+1.2
+
+Ekran Görüntüsü
+
+Print Screen engeli
+
+1.0
+
+Clipboard Engeli
+
+Kopyala/yapıştır engeli
+
+1.0
+
+DevTools Engeli
+
+Geliştirici araçları engeli
+
+0.8
+
+11.2 PROCTORING (GÖZETLEME)
+Özellik
+
+Açıklama
+
+Puan
+
+Webcam Kaydı
+
+Video kayıt
+
+1.0
+
+Kimlik Doğrulama
+
+Fotoğraflı kimlik
+
+0.8
+
+Yüz Tanıma
+
+Sürekli yüz tespiti
+
+0.8
+
+Çoklu Yüz
+
+Birden fazla kişi uyarısı
+
+0.6
+
+Ekran Kaydı
+
+Masaüstü aktivite
+
+0.8
+
+Canlı Gözetleme
+
+Eşzamanlı izleme
+
+0.8
+
+Raporlama
+
+Gözetleme raporları
+
+0.7
+
+MADDE 8 - KULLANICI YÖNETİMİ
+8.1 ROLLER
+Rol
+
+Yetkiler
+
+Puan
+
+Süper Admin
+
+Tüm sistem yönetimi
+
+1.0
+
+Yönetici
+
+Ders yönetimi, raporlar
+
+1.0
+
+Eğitmen
+
+İçerik, not verme
+
+1.0
+
+Asistan
+
+Sınırlı düzenleme
+
+0.6
+
+Öğrenci
+
+Ders erişimi, sınav
+
+1.0
+
+Misafir
+
+Sınırlı görüntüleme
+
+0.4
+
+8.2 KİMLİK DOĞRULAMA
+Özellik
+
+Açıklama
+
+Puan
+
+Yerel Auth
+
+Kullanıcı adı/şifre
+
+1.0
+
+LDAP/AD
+
+Kurumsal dizin
+
+1.0
+
+SSO (SAML)
+
+Tekli oturum açma
+
+1.0
+
+OAuth 2.0
+
+Google, Microsoft giriş
+
+0.8
+
+2FA
+
+SMS, TOTP
+
+1.0
+
+Şifre Politikası
+
+Karmaşıklık kuralları
+
+0.7
+
+MADDE 10 - SORU TÜRLERİ
+Soru Türü
+
+Otomatik Not
+
+Puan
+
+Çoktan Seçmeli
+
+Evet
+
+0.8
+
+Çoklu Seçim
+
+Evet
+
+0.7
+
+Doğru/Yanlış
+
+Evet
+
+0.5
+
+Eşleştirme
+
+Evet
+
+0.7
+
+Sıralama
+
+Evet
+
+0.6
+
+Boşluk Doldurma
+
+Evet
+
+0.7
+
+Kısa Cevap
+
+Kısmen
+
+0.6
+
+Uzun Cevap
+
+Hayır
+
+0.6
+
+Dosya Yükleme
+
+Hayır
+
+0.5
+
+Hesaplama
+
+Evet
+
+0.6
+
+Hotspot
+
+Evet
+
+0.5
+
+Kod Çalıştırma
+
+Evet
+
+0.7
+
+MADDE 13 - ENTEGRASYONLAR
+13.1 STANDART ENTEGRASYONLAR
+Entegrasyon
+
+Açıklama
+
+Puan
+
+SCORM 1.2/2004
+
+E-öğrenme standardı
+
+1.0
+
+xAPI
+
+Öğrenme kaydı standardı
+
+0.8
+
+LTI 1.3
+
+Harici araç entegrasyonu
+
+1.0
+
+QTI 2.1
+
+Soru değişim formatı
+
+0.6
+
+Servis
+
+Açıklama
+
+Puan
+
+Google Workspace
+
+Drive, Calendar
+
+0.8
+
+Microsoft 365
+
+Teams, OneDrive
+
+0.8
+
+BigBlueButton
+
+Video konferans
+
+1.0
+
+Jitsi Meet
+
+Self-hosted video
+
+1.0
+
+H5P
+
+İnteraktif içerik
+
+0.8
+
+Mattermost
+
+Mesajlaşma
+
+0.8
+
+E-posta (SMTP)
+
+Bildirimler
+
+0.6
+
+13.2 ÜÇÜNCÜ TARAF
+
+MADDE 14 - GÜVENLİK
+Özellik
+
+Açıklama
+
+Puan
+
+SSL/TLS
+
+Tüm bağlantılarda HTTPS
+
+1.0
+
+AES-256
+
+Veri şifreleme
+
+1.0
+
+bcrypt/Argon2
+
+Şifre hash
+
+0.8
+
+SQL Injection
+
+Parameterized queries
+
+1.0
+
+XSS Koruması
+
+Input sanitization, CSP
+
+1.0
+
+CSRF Token
+
+Form güvenliği
+
+0.8
+
+Rate Limiting
+
+API istek sınırlama
+
+0.6
+
+Audit Logging
+
+Kritik işlem kaydı
+
+0.8
+
+KVKK Uyumu
+
+Veri koruma
+
+1.0
+
+MADDE 15 - PERFORMANS KRİTERLERİ
+Metrik
+
+Hedef
+
+Kabul Edilebilir
+
+Sayfa Yüklenme
+
+< 2 saniye
+
+< 4 saniye
+
+API Yanıt
+
+< 200ms
+
+< 500ms
+
+Eşzamanlı Kullanıcı
+
+1000+
+
+500+
+
+Uptime SLA
+
+%99.9
+
+%99.5
+
+Lighthouse Skoru
+
+90+
+
+80+
+
+MADDE 16 - TESLİMAT TAKVİMİ
+Aşama
+
+Süre
+
+Çıktılar
+
+Analiz ve Tasarım
+
+4 hafta
+
+SRS, Wireframes, DB
+
+Backend
+
+8 hafta
+
+API, Veritabanı, Auth
+
+Web Frontend
+
+6 hafta
+
+React Web App
+
+Mobil Uygulama
+
+8 hafta
+
+iOS/Android
+
+Optik Okuyucu
+
+4 hafta
+
+OMR Modülü
+
+Masaüstü App
+
+4 hafta
+
+Electron
+
+SEB Entegrasyonu
+
+3 hafta
+
+Safe Exam Browser
+
+Test ve QA
+
+4 hafta
+
+Test Raporları
+
+Canlıya Alma
+
+2 hafta
+
+Production
+
+Toplam Süre: ~31 Hafta (8 Ay)
+
+MADDE 17 - ÖDEME KOŞULLARI
+Aşama
+
+Oran
+
+Koşul
+
+Sözleşme İmzası
+
+%20
+
+Peşin
+
+Analiz Tamamlanması
+
+%15
+
+SRS onayı
+
+Backend Teslimi
+
+%20
+
+API testleri
+
+Alpha Sürümü
+
+%15
+
+Temel özellikler
+
+Beta Sürümü
+
+%15
+
+Tüm özellikler
+
+Canlıya Alma
+
+%10
+
+Production
+
+Garanti Sonu
+
+%5
+
+3 ay sonrası
+
+MADDE 18 - GARANTİ VE DESTEK
+Garanti Süresi: 12 ay
+Garanti kapsamında: Bug düzeltme, güvenlik yamaları, performans iyileştirme, teknik destek (iş günleri
+09:00-18:00)
+Seviye
+
+Öncelik
+
+Yanıt
+
+Çözüm
+
+Kritik
+
+Sistem çalışmıyor
+
+2 saat
+
+8 saat
+
+Yüksek
+
+Önemli özellik
+
+4 saat
+
+24 saat
+
+Orta
+
+Kısmi etkilenme
+
+8 saat
+
+48 saat
+
+Düşük
+
+Küçük sorun
+
+24 saat
+
+1 hafta
+
+MADDE 19-22 - HUKUK HÜKÜMLERİ
+19. FİKRİ MÜLKİYET: Tüm haklar son ödeme sonrası İşveren'e devredilir.
+20. GİZLİLİK: 5 yıl süreyle bilgi gizliliği yükümlülüğü.
+21. FESİH: 30 gün önceden yazılı bildirimle fesih hakkı.
+22. UYUŞMAZLIK: Ankara Mahkemeleri yetkilidir.
+
+EK-1: ÖZELLİK PUANLAMA TABLOSU
+TOPLAM 100 PUAN
+Kategori
+
+Özellik Sayısı
+
+Toplam Puan
+
+Mobil - Genel
+
+8
+
+8.5
+
+Optik Okuyucu
+
+9
+
+10.5
+
+Mobil - Ders/Sınav
+
+8
+
+8.0
+
+Web - Genel
+
+7
+
+7.0
+
+Web - Ders Yönetimi
+
+8
+
+8.5
+
+Web - Değerlendirme
+
+7
+
+8.0
+
+Masaüstü Uygulama
+
+9
+
+9.5
+
+Safe Exam Browser
+
+9
+
+10.2
+
+Proctoring (Gözetleme)
+
+7
+
+5.5
+
+Kullanıcı Yönetimi
+
+6
+
+5.0
+
+Kimlik Doğrulama
+
+6
+
+5.5
+
+Soru Türleri
+
+12
+
+7.5
+
+Entegrasyonlar
+
+11
+
+8.8
+
+Güvenlik
+
+9
+
+8.0
+
+TOPLAM
+
+116
+
+100.0
+
+Puanlama Kriterleri:
+• 1.5+ puan: Kritik özellik, tam uyumluluk zorunlu
+• 1.0-1.4 puan: Yüksek öncelikli
+• 0.5-0.9 puan: Orta öncelikli
+• 0.5 altı: Düşük öncelikli/opsiyonel
+
+İMZA SAYFASI
+İşbu sözleşme taraflarca okunmuş, anlaşılmış ve kabul edilmiştir. 2 nüsha olarak düzenlenmiştir.
+
+İŞVEREN
+
+YÜKLENİCİ
+
+Ad Soyad: ....................
+
+Ad Soyad: ....................
+
+Unvan: ..........................
+
+Unvan: ..........................
+
+Tarih: ............................
+
+Tarih: ............................
+
+İmza:
+
+İmza:
+
+Sözleşme No: LMS-2025-1228-001
+Tarih: 28.12.2025
+
+

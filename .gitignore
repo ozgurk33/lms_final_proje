@@ -1,0 +1,128 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.docker
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+*.tsbuildinfo
+
+# Expo
+.expo/
+.expo-shared/
+expo-updates/
+
+# Desktop builds
+desktop/dist/
+desktop/out/
+
+# Database
+*.db
+*.sqlite
+*.sql
+lms_database_backup.sql
+lms_full_backup_latest.sql
+
+# Docker volumes
+postgres-data/
+minio-data/
+redis-data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+calibration.json
+omr_answers.json
+output/
+calibration_images/
+
+# Images (test images)
+test_omr.png
+test_omr2.png
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Documentation and guides (keep locally only)
+DOCKER_SETUP.md
+MOBILE_NETWORK_GUIDE.md
+POSTGRES_ISSUE.md
+SEB_TESTING_GUIDE.md
+STARTUP_GUIDE.md
+WEB_FIXED.md
+*.md
+!README.md
+!backend/README.md
+
+# Temp and backup files
+temp_*
+*_backup/
+*_backup_*/
+*_full_backup/
+pages_backup/
+components_full_backup/
+
+# Images and media files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+*.ico
+*.pdf
+*.mp4
+*.avi
+*.mov
+*.webp
+
+# Scripts
+*.ps1
+*.sh
+!*.example.sh
+
+# SQL dumps
+*.sql

@@ -1,0 +1,15 @@
+{
+    "num_questions": 5,
+    "options_per_question": 4,
+    "option_labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+    ],
+    "bubble_threshold": 0.3,
+    "confidence_threshold": 0.6,
+    "image_width": 700,
+    "image_height": 1000,
+    "description": "OMR template configuration for 5-question answer sheets with A, B, C, D options"
+}

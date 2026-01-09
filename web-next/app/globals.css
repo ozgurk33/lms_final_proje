@@ -1,0 +1,11 @@
+/* Remove all default Vite styles that conflict with MUI */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Let MUI handle all styling */

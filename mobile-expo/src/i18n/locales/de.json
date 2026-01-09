@@ -1,0 +1,123 @@
+{
+    "common": {
+        "loading": "Laden...",
+        "error": "Fehler",
+        "success": "Erfolgreich",
+        "cancel": "Abbrechen",
+        "confirm": "Bestätigen",
+        "save": "Speichern",
+        "delete": "Löschen",
+        "edit": "Bearbeiten",
+        "close": "Schließen",
+        "logout": "Abmelden",
+        "back": "Zurück",
+        "next": "Weiter",
+        "refresh": "Aktualisieren",
+        "search": "Suchen"
+    },
+    "auth": {
+        "login": "Anmelden",
+        "loginWithBiometrics": "Mit Biometrie anmelden",
+        "usernameOrEmail": "Benutzername oder E-Mail",
+        "password": "Passwort",
+        "forgotPassword": "Passwort vergessen",
+        "loginSuccess": "Anmeldung erfolgreich!",
+        "loginError": "Anmeldung fehlgeschlagen",
+        "logoutConfirm": "Möchten Sie sich wirklich abmelden?",
+        "biometricPrompt": "Authentifizieren Sie sich zum Anmelden",
+        "biometricError": "Biometrische Authentifizierung fehlgeschlagen"
+    },
+    "home": {
+        "greeting": "Hallo,",
+        "quickAccess": "Schnellzugriff",
+        "enrolledCourses": "Eingeschriebene Kurse",
+        "completedQuizzes": "Abgeschlossene Tests",
+        "myCourses": "Meine Kurse",
+        "myCoursesDesc": "Greifen Sie auf alle eingeschriebenen Kurse zu",
+        "quizHistory": "Test-Verlauf",
+        "quizHistoryDesc": "Alle Testversuche anzeigen",
+        "profile": "Mein Profil",
+        "profileDesc": "Kontoinformationen anzeigen und aktualisieren"
+    },
+    "courses": {
+        "title": "Meine Kurse",
+        "noCourses": "Sie sind noch in keinem Kurs eingeschrieben",
+        "courseDetails": "Kursdetails",
+        "instructor": "Dozent",
+        "progress": "Fortschritt",
+        "modules": "Module",
+        "quizzes": "Tests",
+        "assignments": "Aufgaben",
+        "viewDetails": "Details anzeigen",
+        "startCourse": "Kurs beginnen",
+        "continueCourse": "Fortsetzen",
+        "description": "Beschreibung",
+        "content": "Inhalt",
+        "video": "Video",
+        "pdf": "PDF"
+    },
+    "quiz": {
+        "title": "Test-Verlauf",
+        "noQuizzes": "Sie haben noch keine Testversuche",
+        "attempt": "Versuch",
+        "score": "Punktzahl",
+        "status": "Status",
+        "passed": "Bestanden",
+        "failed": "Nicht bestanden",
+        "date": "Datum",
+        "viewResults": "Ergebnisse anzeigen",
+        "startQuiz": "Test starten",
+        "mobileRestriction": "Tests können nicht auf Mobilgeräten durchgeführt werden",
+        "useDesktop": "Bitte verwenden Sie die Web- oder Desktop-Anwendung"
+    },
+    "profile": {
+        "title": "Profil",
+        "settings": "Einstellungen",
+        "appearance": "Erscheinungsbild",
+        "darkMode": "Dunkler Modus",
+        "lightMode": "Heller Modus",
+        "themeToggle": "Designpräferenz ändern",
+        "accountInfo": "Kontoinformationen",
+        "username": "Benutzername",
+        "email": "E-Mail",
+        "role": "Rolle",
+        "language": "Sprache",
+        "notifications": "Benachrichtigungen",
+        "enableNotifications": "Benachrichtigungen aktivieren",
+        "biometric": "Biometrische Anmeldung",
+        "enableBiometric": "Biometrische Anmeldung aktivieren",
+        "appVersion": "App-Version"
+    },
+    "roles": {
+        "STUDENT": "Student",
+        "INSTRUCTOR": "Dozent",
+        "ADMIN": "Administrator",
+        "SUPER_ADMIN": "Super-Administrator"
+    },
+    "instructor": {
+        "dashboard": "Dozenten-Dashboard",
+        "myCourses": "Meine Kurse",
+        "createCourse": "Neuen Kurs erstellen",
+        "editCourse": "Kurs bearbeiten",
+        "students": "Studenten",
+        "courseTitle": "Kurstitel",
+        "courseDescription": "Kursbeschreibung"
+    },
+    "admin": {
+        "dashboard": "Admin-Dashboard",
+        "users": "Benutzer",
+        "courses": "Kurse",
+        "statistics": "Statistiken",
+        "totalUsers": "Gesamte Benutzer",
+        "totalCourses": "Gesamte Kurse"
+    },
+    "offline": {
+        "title": "Offline-Modus",
+        "message": "Keine Internetverbindung. Zwischengespeicherte Inhalte werden angezeigt.",
+        "syncWhenOnline": "Wird synchronisiert, wenn die Verbindung wiederhergestellt ist"
+    },
+    "theme": {
+        "dark": "🌙 Dunkler Modus",
+        "light": "☀️ Heller Modus"
+    }
+}

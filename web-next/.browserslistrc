@@ -1,0 +1,16 @@
+# Browsers that we support
+# This ensures compatibility with Chrome, Firefox, Safari, and Edge
+
+# Production browsers - covers 95%+ of users
+> 0.5%
+last 2 versions
+not dead
+
+# Specific browser support as per requirements
+Chrome >= 90
+Firefox >= 88
+Safari >= 14
+Edge >= 90
+
+# Exclude IE 11 (not modern)
+not IE 11

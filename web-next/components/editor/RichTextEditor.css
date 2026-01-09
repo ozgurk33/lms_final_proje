@@ -1,0 +1,112 @@
+.rich-text-editor-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.ql-container {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.ql-editor {
+  min-height: 200px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.ql-editor.ql-blank::before {
+  color: #94a3b8;
+  font-style: italic;
+}
+
+/* Toolbar styling */
+.ql-toolbar {
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0 !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.ql-snow .ql-stroke {
+  stroke: #475569;
+}
+
+.ql-snow .ql-fill {
+  fill: #475569;
+}
+
+.ql-snow .ql-picker-label {
+  color: #475569;
+}
+
+/* Active state */
+.ql-snow.ql-toolbar button:hover,
+.ql-snow .ql-toolbar button:hover,
+.ql-snow.ql-toolbar button:focus,
+.ql-snow .ql-toolbar button:focus,
+.ql-snow.ql-toolbar button.ql-active,
+.ql-snow .ql-toolbar button.ql-active {
+  color: #4f46e5;
+}
+
+.ql-snow.ql-toolbar button:hover .ql-stroke,
+.ql-snow .ql-toolbar button:hover .ql-stroke,
+.ql-snow.ql-toolbar button:focus .ql-stroke,
+.ql-snow .ql-toolbar button:focus .ql-stroke,
+.ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.ql-snow .ql-toolbar button.ql-active .ql-stroke {
+  stroke: #4f46e5;
+}
+
+.ql-snow.ql-toolbar button:hover .ql-fill,
+.ql-snow .ql-toolbar button:hover .ql-fill,
+.ql-snow.ql-toolbar button:focus .ql-fill,
+.ql-snow .ql-toolbar button:focus .ql-fill,
+.ql-snow.ql-toolbar button.ql-active .ql-fill,
+.ql-snow .ql-toolbar button.ql-active .ql-fill {
+  fill: #4f46e5;
+}
+
+/* Dark mode support */
+.dark .rich-text-editor-container {
+  border-color: #334155;
+  background: #1e293b;
+}
+
+.dark .ql-toolbar {
+  background: #0f172a;
+  border-bottom-color: #334155 !important;
+}
+
+.dark .ql-container {
+  color: #e2e8f0;
+  background: #1e293b;
+}
+
+.dark .ql-snow .ql-stroke {
+  stroke: #cbd5e1;
+}
+
+.dark .ql-snow .ql-fill {
+  fill: #cbd5e1;
+}
+
+.dark .ql-snow .ql-picker-label {
+  color: #cbd5e1;
+}
+
+.dark .ql-editor.ql-blank::before {
+  color: #64748b;
+}
+
+/* Read-only mode */
+.ql-container.ql-disabled {
+  background: #f8fafc;
+}
+
+.dark .ql-container.ql-disabled {
+  background: #0f172a;
+}

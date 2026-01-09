@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database - Docker PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    container_name: lms-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-5806237833}
+      POSTGRES_DB: lms_db
+    ports:
+      - "5433:5432"  # Using 5433 to avoid conflict with native PostgreSQL
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./lms_database_backup.sql:/docker-entrypoint-initdb.d/backup.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Backend API Service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: lms-backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      PORT: 3000
+      # Connect to Docker PostgreSQL
+      DATABASE_URL: postgresql://postgres:${DB_PASSWORD:-5806237833}@postgres:5432/lms_db
+      JWT_SECRET: ${JWT_SECRET:-your-super-secret-jwt-key-change-in-production}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-your-super-secret-refresh-key}
+      FRONTEND_URL: http://localhost:5173
+      CORS_ORIGIN: http://localhost:5173
+    volumes:
+      - ./backend:/app
+      - ./omr-algorithm:/app/omr-algorithm  # OMR Python scripts
+      - /app/node_modules
+      - backend_uploads:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: npm start
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+volumes:
+  postgres_data:
+    driver: local
+  backend_uploads:
+    driver: local
+
+networks:
+  default:
+    name: lms-network
+    driver: bridge
