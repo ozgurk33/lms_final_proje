@@ -1,80 +1,54 @@
-# LMS Desktop Application
+# Desktop Application
 
-Electron-based desktop application for the LMS platform.
+Cross-platform desktop application built with Electron, providing native desktop experience for the LMS.
 
 ## Features
 
-- Native Windows, macOS, and Linux support
-- Full LMS functionality
-- Offline-capable (future)
-- Auto-updates (future)
+- Full LMS functionality in native desktop app
+- System tray integration
+- File system access
+- Offline course content
+- Automatic updates
+- Native notifications
 
-## Development
+## Tech Stack
 
-### Prerequisites
-- Node.js 20+
-- npm
+- **Framework**: Electron
+- **Renderer**: Web-next application
+- **Build**: electron-builder
 
-### Run in Development Mode
+## Setup
 
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Configure backend URL:
+Edit configuration to point to your backend API.
+
+3. Start development:
 ```bash
 npm run dev
 ```
 
-This will:
-1. Start the web frontend on localhost:5173
-2. Launch Electron pointing to the dev server
-
-### Build for Distribution
-
-**Build web assets:**
+4. Build for production:
 ```bash
-npm run build
+npm run build        # Build for current platform
+npm run build:win    # Build for Windows
+npm run build:mac    # Build for macOS
+npm run build:linux  # Build for Linux
 ```
 
-**Create distributables:**
+## Platform Support
 
-Windows:
-```bash
-npm run dist:win
-```
+- Windows (x64, arm64)
+- macOS (Intel, Apple Silicon)
+- Linux (x64, arm64)
 
-macOS:
-```bash
-npm run dist:mac
-```
+## Distribution
 
-Linux:
-```bash
-npm run dist:linux
-```
-
-All platforms:
-```bash
-npm run dist
-```
-
-Output will be in `dist/` directory.
-
-## Project Structure
-
-```
-desktop/
-├── main.js           # Electron main process
-├── package.json      # Dependencies & build config
-├── assets/           # Icons and resources
-└── build/            # Web build output (generated)
-```
-
-## Technologies
-
-- Electron 33.x
-- electron-builder (packaging)
-- React frontend (from ../web)
-
-## Login Credentials
-
-Same as web and mobile:
-- Admin: `admin` / `Test123!@#`
-- Instructor: `instructor` / `Test123!@#`
-- Student: `student` / `Test123!@#`
+Built installers will be in the `dist/` directory:
+- Windows: `.exe` installer
+- macOS: `.dmg` image
+- Linux: `.AppImage`, `.deb`, `.rpm`
